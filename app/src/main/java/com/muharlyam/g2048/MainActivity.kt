@@ -42,10 +42,12 @@ class MainActivity : AppCompatActivity() {
 
             override fun onSwipeTop() {
                 numberAdapter.onSwipeTop()
+                score.text = numberService.getScore().toString()
             }
 
             override fun onSwipeBottom() {
                 numberAdapter.onSwipeBottom()
+                score.text = numberService.getScore().toString()
             }
         })
     }

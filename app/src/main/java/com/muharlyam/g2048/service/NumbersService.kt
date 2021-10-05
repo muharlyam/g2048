@@ -59,7 +59,7 @@ object NumbersService {
     fun onSwipeTop(): MutableList<String> {
         for (rowIndex in 0..3) {
             for (cellIndex in 0..3) {
-                if (cellIndex > 0 && numbers[rowIndex][cellIndex].value != 0) {
+                if (cellIndex > 0 && numbers[cellIndex][rowIndex].value != 0) {
                     for (i in cellIndex - 1 downTo 0) {
                         if (numbers[i][rowIndex].value == numbers[cellIndex][rowIndex].value
                             && (numbers[i + 1][rowIndex].value == 0 || cellIndex == i + 1)
@@ -111,7 +111,6 @@ object NumbersService {
                         }
                     }
                 }
-
             }
         }
 

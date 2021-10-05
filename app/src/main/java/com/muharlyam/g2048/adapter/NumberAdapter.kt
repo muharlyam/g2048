@@ -42,7 +42,6 @@ class NumberAdapter: RecyclerView.Adapter<NumberAdapter.NumberHolder>() {
     fun onSwipeLeft() {
         numbers.clear();
         numbers.addAll(numbersService.onSwipeLeft())
-        println(numbersService.getScore())
         notifyDataSetChanged()
     }
 
@@ -50,7 +49,6 @@ class NumberAdapter: RecyclerView.Adapter<NumberAdapter.NumberHolder>() {
     fun onSwipeRight() {
         numbers.clear();
         numbers.addAll(numbersService.onSwipeRight())
-        println(numbersService.getScore())
         notifyDataSetChanged()
     }
 
