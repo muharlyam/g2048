@@ -51,4 +51,18 @@ class MainActivity : AppCompatActivity() {
             }
         })
     }
+
+    fun onCancelClick(view: android.view.View) {
+        val score: TextView = findViewById(R.id.score)
+
+        numberAdapter.onCancel()
+        score.text = numberService.getScore().toString()
+    }
+
+    fun onResetClick(view: android.view.View) {
+        val score: TextView = findViewById(R.id.score)
+
+        numberAdapter.onReset()
+        score.text = numberService.getScore().toString()
+    }
 }

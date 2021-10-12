@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">g2048</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="score">score:</string>
+    <string name="high_score">high score:</string>
+    <string name="_3_932_100">3 932 100</string>
 </resources>
